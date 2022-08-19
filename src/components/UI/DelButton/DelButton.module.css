@@ -1,0 +1,26 @@
+.del {
+    display: inline-block;
+    font-size: 27px;
+    margin-right: 20px;
+    height: 30px;
+    width: 50px;
+    border: 1px solid #6a0101;
+    vertical-align:top;
+    background-color: #e60000e4;
+    color: #fff;
+    text-align: center;
+    border-radius: 7px;
+    user-select: none;   
+  }
+  
+.del:hover {
+    cursor: pointer;
+    border: 1px solid #6a0101;
+    background-color: rgb(158, 0, 0);
+    color: #ffffff;
+}
+
+.del p{
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
