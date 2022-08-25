@@ -1,0 +1,14 @@
+.mod_btn {
+    width: 250px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #006275;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mod_btn:hover {
+    background-color: #007d95;
+}

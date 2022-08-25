@@ -1,11 +1,11 @@
 import React from 'react'
 import DelButton from './UI/DelButton/DelButton'
 
-const CreateDude = ({firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
+const CreateDude = ({setModal, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
 
     return (
         <div data-id={id} className="row">
-            <DelButton/>
+            <DelButton setModal={setModal}/>
             <div className="dude-info dude-info-left">
                 <p>{lastName}</p>
             </div>

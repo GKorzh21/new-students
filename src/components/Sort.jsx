@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Sort = ({value, id}) => {
+const Sort = ({value}) => {
     return (
-        <div className="type-sort" id={id}>
+        <div className="type-sort">
             <input value={value} type="button"/>
             <div className="arrow">▾</div>
         </div>

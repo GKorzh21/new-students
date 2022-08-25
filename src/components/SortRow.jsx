@@ -1,10 +1,14 @@
 import React from 'react'
 import Sort from './Sort'
 
-const SortRow = () => {
+const SortRow = (list) => {
+    const SortCol = () => {
+        console.log('e')
+    }
+
     return (
         <div className="sort-row">
-            <Sort value='Фамилия' id=''/>
+            <Sort onClick={SortCol()} value='Фамилия'/>
             <Sort value='Имя'/>
             <Sort value='Отчество'/>
             <Sort value='Русский'/>
