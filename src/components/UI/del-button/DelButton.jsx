@@ -5,7 +5,7 @@ const DelButton = ({setIdToDelete, id}) => {
 
     const ok = () => {
         console.log(setIdToDelete)
-        setIdToDelete['setIdToDelete'](String({id}['id']))
+        setIdToDelete(String(id))
     }
 
     return (

@@ -17,7 +17,8 @@ function App() {
     {"mOther": 95, "mRus": 91, "lastName": "Мишина", "summ": 272, "id": "ef91b8dc6", "mMath": 86, "firstName": "Анастасия", "middleName": "Игоревна"}
   ]  
 
-  const [modal, setIdToDelete] = useState('undefined')
+  const [modal, setIdToDelete] = useState('')
+  console.log(modal)
   const [list, setList] = useState(Dudes)
 
   return (

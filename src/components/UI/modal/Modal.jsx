@@ -5,7 +5,7 @@ const Modal = ({visible, setVisible, id}) => {
 
     let classes = [cl.modal_wrap]
 
-    if (visible !== 'undefined') {
+    if (visible !== '') {
         classes.push(cl.active)
     }
 
