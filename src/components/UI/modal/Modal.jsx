@@ -1,11 +1,11 @@
 import React from 'react'
 import cl from './Modal.module.css'
 
-const Modal = ({visible, setVisible, id}) => {
+const Modal = ({IdToDelete, setVisible, id}) => {
 
     let classes = [cl.modal_wrap]
 
-    if (visible !== '') {
+    if (IdToDelete !== '') {
         classes.push(cl.active)
     }
 

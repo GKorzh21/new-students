@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Modal visible={modal} setVisible={setIdToDelete}/>
+      <Modal IdToDelete={modal} setVisible={setIdToDelete}/>
       <PostForm list={Dudes} setList={setList}/>
       <SortRow list={Dudes}/>
       <CreateList list={Dudes} setIdToDelete={setIdToDelete}/>
