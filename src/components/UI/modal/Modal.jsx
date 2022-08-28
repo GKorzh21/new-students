@@ -5,12 +5,12 @@ const Modal = ({visible, setVisible, id}) => {
 
     let classes = [cl.modal_wrap]
 
-    if (visible) {
+    if (visible !== 'undefined') {
         classes.push(cl.active)
     }
 
     return (
-        <div className={classes.join(' ')} onClick={() => setVisible(false)}>
+        <div className={classes.join(' ')} onClick={() => setVisible('something')}>
             <div className={cl.modal} onClick={(e) => e.stopPropagation()}>
                 <p>ВЫ ДЕЙСТВИТЕЛЬНО ХОТИТЕ</p>
                 <p>УДАЛИТЬ АБИТУРИЕНТА?</p>
@@ -18,7 +18,7 @@ const Modal = ({visible, setVisible, id}) => {
                     <div
                         style={{marginRight:'4px'}}
                         className={cl.mod_btn}
-                        onClick={() => setVisible(false)}
+                        onClick={() => setVisible('something')}
                     >Отменить</div>
                     <div className={cl.mod_btn}>Удалить</div>
                 </div>

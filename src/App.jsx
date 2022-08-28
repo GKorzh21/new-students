@@ -17,18 +17,15 @@ function App() {
     {"mOther": 95, "mRus": 91, "lastName": "Мишина", "summ": 272, "id": "ef91b8dc6", "mMath": 86, "firstName": "Анастасия", "middleName": "Игоревна"}
   ]  
 
-  const [modal, setModal] = useState(false)
+  const [modal, setIdToDelete] = useState('undefined')
   const [list, setList] = useState(Dudes)
-
-  console.log(list, setList)
-  console.log('ok')
 
   return (
     <div className="App">
-      <Modal visible={modal} setVisible={setModal}/>
+      <Modal visible={modal} setVisible={setIdToDelete}/>
       <PostForm list={Dudes} setList={setList}/>
       <SortRow list={Dudes}/>
-      <CreateList list={Dudes} setModal={setModal}/>
+      <CreateList list={Dudes} setIdToDelete={setIdToDelete}/>
     </div>
   );
   

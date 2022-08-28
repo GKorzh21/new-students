@@ -1,11 +1,11 @@
 import React from 'react'
 import DelButton from './UI/del-button/del-button'
 
-const CreateDude = ({setModal, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
+const CreateDude = ({setIdToDelete, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
 
     return (
         <div data-id={id} className="row">
-            <DelButton setModal={setModal}/>
+            <DelButton setIdToDelete={{setIdToDelete, id}}/>
             <div className="dude-info dude-info-left">
                 <p>{lastName}</p>
             </div>

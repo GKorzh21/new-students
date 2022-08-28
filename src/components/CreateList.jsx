@@ -39,13 +39,13 @@ import CreateDude from './CreateDude'
   //   )
   // });
 
-const CreateList = ({setModal, list}) => {
+const CreateList = ({setIdToDelete, list}) => {
   return (
     <div id='wrap'>
         { 
           list.map((dude) => (
             <CreateDude
-              setModal={setModal}
+              setIdToDelete={setIdToDelete}
               firstName={dude.firstName}
               middleName={dude.middleName}
               lastName={dude.lastName}
