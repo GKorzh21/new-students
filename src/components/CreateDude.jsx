@@ -1,5 +1,5 @@
 import React from 'react'
-import DelButton from './UI/DelButton/DelButton'
+import DelButton from './UI/del-button/del-button'
 
 const CreateDude = ({setModal, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
 
