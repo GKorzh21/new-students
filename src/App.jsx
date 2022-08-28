@@ -21,6 +21,7 @@ function App() {
   const [list, setList] = useState(Dudes)
 
   console.log(list, setList)
+  console.log('ok')
 
   return (
     <div className="App">
