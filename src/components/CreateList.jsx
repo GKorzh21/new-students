@@ -1,5 +1,5 @@
 import React from 'react'
-import CreateDude from './CreateDude'
+import SingleDude from './SingleDude'
 
 
 // const CreateList = () => {
@@ -23,7 +23,7 @@ import CreateDude from './CreateDude'
   //     <div id='wrap'>
   //         {
   //           Dudes.map((dude) => (
-  //             <CreateDude
+  //             <SingleDude
   //               firstName={dude.firstName}
   //               middleName={dude.middleName}
   //               lastName={dude.lastName}
@@ -44,7 +44,7 @@ const CreateList = ({setIdToDelete, list}) => {
     <div id='wrap'>
         { 
           list.map((dude) => (
-            <CreateDude
+            <SingleDude
               setIdToDelete={setIdToDelete}
               firstName={dude.firstName}
               middleName={dude.middleName}

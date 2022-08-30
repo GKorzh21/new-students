@@ -18,7 +18,6 @@ function App() {
   ]  
 
   const [modal, setIdToDelete] = useState('')
-  console.log(modal)
   const [list, setList] = useState(Dudes)
 
   return (

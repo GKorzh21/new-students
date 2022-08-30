@@ -1,11 +1,15 @@
 import React from 'react'
 import DelButton from './UI/del-button/DelButton'
 
-const CreateDude = ({setIdToDelete, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
+const SingleDude = ({setIdToDelete, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
 
     return (
         <div data-id={id} className="row">
-            <DelButton setIdToDelete={setIdToDelete} id={id}/>
+            <DelButton
+                setIdToDelete={setIdToDelete}
+                id={id}
+                onClick={() => console.log('ok')}
+            />
             <div className="dude-info dude-info-left">
                 <p>{lastName}</p>
             </div>
@@ -31,4 +35,4 @@ const CreateDude = ({setIdToDelete, firstName, middleName, lastName, mMath, mRus
     )
 }
 
-export default CreateDude
+export default SingleDude

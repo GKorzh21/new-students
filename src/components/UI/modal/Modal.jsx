@@ -10,7 +10,7 @@ const Modal = ({IdToDelete, setVisible, id}) => {
     }
 
     return (
-        <div className={classes.join(' ')} onClick={() => setVisible('something')}>
+        <div className={classes.join(' ')} onClick={() => setVisible('')}>
             <div className={cl.modal} onClick={(e) => e.stopPropagation()}>
                 <p>ВЫ ДЕЙСТВИТЕЛЬНО ХОТИТЕ</p>
                 <p>УДАЛИТЬ АБИТУРИЕНТА?</p>
@@ -18,7 +18,7 @@ const Modal = ({IdToDelete, setVisible, id}) => {
                     <div
                         style={{marginRight:'4px'}}
                         className={cl.mod_btn}
-                        onClick={() => setVisible('something')}
+                        onClick={() => setVisible('')}
                     >Отменить</div>
                     <div className={cl.mod_btn}>Удалить</div>
                 </div>

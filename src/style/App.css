@@ -232,3 +232,11 @@ body {
 .mod-btn:hover {
   background-color: #007d95;
 }
+
+.del-btn-hover-on {
+  background-color : rgba(255, 128, 128, 0.894);
+}
+
+.del-btn-hover-off {
+  background-color : rgba(105, 195, 255, 0.7);
+}
