@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style/App.css';
 import PostForm from './components/PostForm';
 import SortRow from './components/SortRow';
@@ -6,6 +6,22 @@ import CreateList from './components/CreateList';
 import Modal from './components/UI/modal/Modal';
 
 function App() {
+  useEffect(() => {
+    let response = await fetch('https://opbpf6ckhl2u2dtadxkcvwav3m0bpxlk.lambda-url.us-east-1.on.aws');
+    if (response.ok) {
+      let json = await response.json();
+      return json
+  
+    } else {
+      alert("Ошибка HTTP: " + response.status);
+    }
+  
+    let Dudes = []
+    getStudents().then((data) => {
+      Dudes = data;
+      console.log(Dudes)
+    });
+  }, [])
 
   let Dudes = [
     {"mOther": 86, "mRus": 91, "lastName": "Лущеко", "summ": 253, "id": "6da33c4aa", "mMath": 76, "firstName": "Евгений", "middleName": "Федорович"}, 
