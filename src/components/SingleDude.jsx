@@ -3,12 +3,23 @@ import DelButton from './UI/del-button/DelButton'
 
 const SingleDude = ({setIdToDelete, firstName, middleName, lastName, mMath, mRus, mOther, summ, id }) => {
 
+    const hoverOn = (e) => {
+        e.target.parentNode.classList.add('del-btn-hover-on')
+        e.target.parentNode.classList.remove('del-btn-hover-off')
+    }
+
+    const hoverOff = (e) => {
+        e.target.parentNode.classList.remove('del-btn-hover-on')
+        e.target.parentNode.classList.add('del-btn-hover-off')
+    }
+
     return (
         <div data-id={id} className="row">
             <DelButton
                 setIdToDelete={setIdToDelete}
                 id={id}
-                onClick={() => console.log('ok')}
+                onMouseEnter={(e) => hoverOn(e)}
+                onMouseLeave={(e) => hoverOff(e)}
             />
             <div className="dude-info dude-info-left">
                 <p>{lastName}</p>
